@@ -1,0 +1,203 @@
+/* MindQuay — harbor-at-dusk design system (matches the iOS app palette). */
+
+:root {
+  --deep-navy: #0d1b32;
+  --navy: #12233d;
+  --harbor: #164f5d;
+  --teal: #3d7a94;
+  --mist: #73abbd;
+  --sand: #f6e7c2;
+  --sand-dim: #e8d5a8;
+  --ink: #eef4f7;
+  --ink-dim: rgba(238, 244, 247, 0.72);
+  --ink-faint: rgba(238, 244, 247, 0.45);
+  --card: rgba(255, 255, 255, 0.06);
+  --card-border: rgba(255, 255, 255, 0.10);
+  --max-width: 1080px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--deep-navy) 0%, var(--navy) 45%, var(--harbor) 130%);
+  background-attachment: fixed;
+  color: var(--ink);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.serif { font-family: "New York", "Iowan Old Style", Georgia, "Times New Roman", serif; }
+
+.wrap { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+/* Header / nav */
+header.site {
+  padding: 20px 0;
+}
+header.site .wrap {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.brand {
+  display: flex; align-items: center; gap: 12px;
+  color: var(--ink); text-decoration: none;
+  font-weight: 700; font-size: 1.15rem;
+}
+.brand img { width: 36px; height: 36px; border-radius: 9px; }
+nav.main a {
+  color: var(--ink-dim); text-decoration: none; font-size: 0.95rem;
+  margin-left: 22px;
+}
+nav.main a:hover { color: var(--sand); }
+
+/* Hero */
+.hero { padding: 72px 0 40px; text-align: center; }
+.hero h1 {
+  font-family: "New York", "Iowan Old Style", Georgia, serif;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.12; font-weight: 600;
+  margin: 0 auto 20px; max-width: 17ch;
+}
+.hero h1 .accent { color: var(--sand); }
+.hero p.lede {
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  color: var(--ink-dim); max-width: 52ch; margin: 0 auto 32px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block; padding: 14px 28px; border-radius: 14px;
+  font-weight: 600; text-decoration: none; font-size: 1rem;
+}
+.btn.primary { background: var(--sand); color: var(--deep-navy); }
+.btn.primary:hover { background: var(--sand-dim); }
+.btn.ghost {
+  color: var(--ink); border: 1px solid var(--card-border); margin-left: 12px;
+}
+.btn.ghost:hover { border-color: var(--mist); color: var(--sand); }
+.btn-note { display: block; margin-top: 14px; font-size: 0.85rem; color: var(--ink-faint); }
+
+/* Sections */
+section { padding: 64px 0; }
+section h2 {
+  font-family: "New York", "Iowan Old Style", Georgia, serif;
+  font-size: clamp(1.7rem, 3.6vw, 2.4rem); font-weight: 600;
+  margin-bottom: 14px; text-align: center;
+}
+section p.sub { text-align: center; color: var(--ink-dim); max-width: 56ch; margin: 0 auto 44px; }
+
+/* Feature grid */
+.grid {
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.card {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: 18px; padding: 26px;
+}
+.card .glyph { font-size: 1.6rem; margin-bottom: 12px; display: block; }
+.card h3 { font-size: 1.05rem; margin-bottom: 8px; color: var(--sand); font-weight: 600; }
+.card p { font-size: 0.95rem; color: var(--ink-dim); }
+
+/* Screenshot strip */
+.shots {
+  display: grid; gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: start;
+}
+.shots figure { text-align: center; }
+.shots img {
+  width: 100%; max-width: 260px; border-radius: 26px;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
+}
+.shots figcaption { margin-top: 12px; font-size: 0.9rem; color: var(--ink-dim); }
+
+/* Ritual steps */
+.steps { counter-reset: step; max-width: 640px; margin: 0 auto; }
+.step {
+  display: flex; gap: 18px; align-items: flex-start;
+  padding: 18px 0; border-bottom: 1px solid var(--card-border);
+}
+.step:last-child { border-bottom: none; }
+.step .num {
+  counter-increment: step;
+  flex: 0 0 40px; height: 40px; border-radius: 50%;
+  background: var(--card); border: 1px solid var(--card-border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--sand); font-weight: 700;
+}
+.step .num::before { content: counter(step); }
+.step h3 { font-size: 1.05rem; margin-bottom: 4px; }
+.step p { color: var(--ink-dim); font-size: 0.95rem; }
+
+/* Pricing */
+.plans { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.plan {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: 20px; padding: 30px; width: 300px; text-align: center;
+}
+.plan.featured { border-color: var(--sand); background: rgba(246, 231, 194, 0.07); }
+.plan .badge {
+  display: inline-block; background: var(--sand); color: var(--deep-navy);
+  font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 999px;
+  margin-bottom: 10px;
+}
+.plan h3 { font-size: 1.1rem; margin-bottom: 6px; }
+.plan .price { font-size: 2.1rem; font-weight: 700; color: var(--sand); }
+.plan .per { color: var(--ink-faint); font-size: 0.95rem; }
+.plan p.detail { margin-top: 10px; color: var(--ink-dim); font-size: 0.9rem; }
+
+/* Privacy banner */
+.privacy-banner {
+  text-align: center; background: var(--card); border: 1px solid var(--card-border);
+  border-radius: 20px; padding: 36px; max-width: 720px; margin: 0 auto;
+}
+.privacy-banner h2 { margin-bottom: 10px; }
+.privacy-banner p { color: var(--ink-dim); }
+
+/* Prose pages (privacy / terms / support) */
+.prose { max-width: 720px; margin: 0 auto; padding: 48px 0 72px; }
+.prose h1 {
+  font-family: "New York", "Iowan Old Style", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 600; margin-bottom: 8px;
+}
+.prose .updated { color: var(--ink-faint); font-size: 0.9rem; margin-bottom: 36px; }
+.prose h2 { font-size: 1.3rem; margin: 36px 0 12px; color: var(--sand); text-align: left; }
+.prose p, .prose li { color: var(--ink-dim); margin-bottom: 12px; }
+.prose ul { padding-left: 24px; margin-bottom: 16px; }
+.prose a { color: var(--mist); }
+.prose a:hover { color: var(--sand); }
+.prose strong { color: var(--ink); }
+.prose .callout {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-left: 3px solid var(--sand);
+  border-radius: 12px; padding: 18px 20px; margin: 20px 0;
+}
+
+/* FAQ */
+details {
+  background: var(--card); border: 1px solid var(--card-border);
+  border-radius: 14px; padding: 16px 20px; margin-bottom: 12px;
+}
+details summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+details p { margin-top: 10px; }
+
+/* Footer */
+footer.site {
+  border-top: 1px solid var(--card-border);
+  padding: 36px 0 48px; margin-top: 40px;
+  font-size: 0.9rem; color: var(--ink-faint);
+}
+footer.site .wrap { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; justify-content: space-between; }
+footer.site a { color: var(--ink-dim); text-decoration: none; margin-right: 18px; }
+footer.site a:hover { color: var(--sand); }
+
+@media (max-width: 640px) {
+  .hero { padding: 48px 0 24px; }
+  section { padding: 44px 0; }
+  .btn.ghost { margin-left: 0; margin-top: 12px; }
+  nav.main a { margin-left: 14px; font-size: 0.88rem; }
+}
