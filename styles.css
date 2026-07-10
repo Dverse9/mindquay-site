@@ -22,8 +22,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  background: linear-gradient(180deg, var(--deep-navy) 0%, var(--navy) 45%, var(--harbor) 130%);
-  background-attachment: fixed;
+  background: var(--deep-navy);
   color: var(--ink);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -53,17 +52,41 @@ nav.main a {
 nav.main a:hover { color: var(--sand); }
 
 /* Hero */
-.hero { padding: 72px 0 40px; text-align: center; }
+.hero {
+  position: relative;
+  min-height: min(78vh, 760px);
+  padding: 110px 0 72px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  background-image: url("/assets/cosmic-harbor-night.png");
+  background-position: center;
+  background-size: cover;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 18, 35, 0.56);
+}
+.hero .wrap { position: relative; z-index: 1; }
 .hero h1 {
   font-family: "New York", "Iowan Old Style", Georgia, serif;
-  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-size: clamp(3.2rem, 8vw, 6.2rem);
   line-height: 1.12; font-weight: 600;
-  margin: 0 auto 20px; max-width: 17ch;
+  margin: 0 auto 4px; max-width: 17ch;
+  text-shadow: 0 3px 24px rgba(0, 0, 0, 0.55);
 }
-.hero h1 .accent { color: var(--sand); }
+.hero .offer {
+  color: var(--sand);
+  font-family: "New York", "Iowan Old Style", Georgia, serif;
+  font-size: clamp(1.4rem, 3vw, 2.25rem);
+  margin-bottom: 22px;
+}
 .hero p.lede {
   font-size: clamp(1.05rem, 2.2vw, 1.3rem);
-  color: var(--ink-dim); max-width: 52ch; margin: 0 auto 32px;
+  color: var(--ink); max-width: 52ch; margin: 0 auto 32px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.7);
 }
 
 /* Buttons */
@@ -109,7 +132,7 @@ section p.sub { text-align: center; color: var(--ink-dim); max-width: 56ch; marg
 }
 .shots figure { text-align: center; }
 .shots img {
-  width: 100%; max-width: 260px; border-radius: 26px;
+  width: 100%; max-width: 260px; border-radius: 8px;
   border: 1px solid var(--card-border);
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
 }
