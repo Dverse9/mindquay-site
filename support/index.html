@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Support — MindQuay</title>
-<meta name="description" content="Get help with MindQuay. Contact support and browse answers about privacy, Apple Intelligence, local data, purchases, and refunds.">
+<meta name="description" content="Get help with MindQuay, including private iCloud backup, Apple identity, privacy, Apple Intelligence, purchases, and deletion.">
 <link rel="stylesheet" href="/styles.css">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta property="og:title" content="Support — MindQuay">
-<meta property="og:description" content="Get help with MindQuay. Contact support and browse answers about privacy, Apple Intelligence, local data, purchases, and refunds.">
+<meta property="og:description" content="Get help with MindQuay, including private iCloud backup, Apple identity, privacy, Apple Intelligence, purchases, and deletion.">
 <meta property="og:image" content="https://mindquay.com/assets/icon-512.png">
 </head>
 <body>
@@ -58,12 +58,22 @@
 
     <details>
       <summary>Where is my data stored?</summary>
-      <p>On your device, and only on your device. MindQuay stores everything locally using Apple's SwiftData. There is no account, no server, and no sync. Your thoughts never leave your phone.</p>
+      <p>MindQuay keeps its working database locally on your iPhone. When Private iCloud Backup is on, it also stores a restorable copy in MindQuay&rsquo;s private container in your own iCloud account. There is no MindQuay data server, and MindQuay&rsquo;s developer cannot read either copy.</p>
+    </details>
+
+    <details>
+      <summary>Do I need Sign in with Apple for backup?</summary>
+      <p>No. Apple identity is optional and separate from Private iCloud Backup. Backup uses the iCloud account already configured on your iPhone. Every MindQuay feature works without adding an Apple identity inside the app.</p>
+    </details>
+
+    <details>
+      <summary>How do I restore after reinstalling?</summary>
+      <p>Leave Private iCloud Backup on. After reinstalling MindQuay on an iPhone signed into the same iCloud account, open the app and it will check for saved progress before onboarding. You can see the latest backup status or choose <strong>Back up now</strong> in Settings.</p>
     </details>
 
     <details>
       <summary>How do I delete my data?</summary>
-      <p>Open MindQuay and go to <strong>Settings &gt; Delete my thoughts &amp; history</strong>. All your thoughts and history are erased instantly. Because all data lives on your device, deleting the app itself removes everything; there is no copy anywhere else.</p>
+      <p>Open MindQuay and go to <strong>Settings &gt; Delete my thoughts &amp; history</strong>. MindQuay removes your practice from both the iPhone and the private iCloud backup when backup is enabled. To remove the backup itself, choose <strong>Turn off and remove</strong> under Private iCloud Backup. Deleting the app removes the local copy but intentionally leaves an enabled iCloud backup available for restoration.</p>
     </details>
 
     <details>
@@ -73,7 +83,7 @@
 
     <details>
       <summary>Does MindQuay work offline?</summary>
-      <p>Yes. Docking, morning handoff, the structured Mirror, breathing, and review do not depend on a MindQuay server. StoreKit purchases use Apple&rsquo;s service. Apple Intelligence availability is controlled by iOS on compatible devices.</p>
+      <p>Yes. Docking, morning handoff, Beacon, the structured Mirror, breathing, and review do not depend on a MindQuay server. Backup resumes when iCloud becomes available. StoreKit purchases and optional Apple services use Apple&rsquo;s systems.</p>
     </details>
 
     <details>
