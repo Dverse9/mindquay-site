@@ -135,7 +135,7 @@ section p.sub { text-align: center; color: var(--ink-dim); max-width: 56ch; marg
 }
 .shots figure { text-align: center; }
 .shots img {
-  width: 100%; max-width: 260px; border-radius: 8px;
+  display: block; width: 100%; height: auto; max-width: 260px; margin: 0 auto; border-radius: 8px;
   aspect-ratio: 1320 / 2868; object-fit: cover;
   border: 1px solid var(--card-border);
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
