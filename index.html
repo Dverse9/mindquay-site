@@ -3,32 +3,78 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MindQuay — A quiet harbor for a busy mind</title>
-<meta name="description" content="MindQuay is a quiet harbor for thoughts, attention, reflection, and breathing on iPhone, with private iCloud backup and no MindQuay data server.">
+<title>MindQuay: Private Thought Journal &amp; Focus App</title>
+<meta name="description" content="MindQuay is a free, private iPhone and iPad app for docking racing thoughts, choosing one daily focus, guided breathing, reflection, and iCloud backup.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0d1b32">
 <meta name="apple-itunes-app" content="app-id=6786727761">
+<meta name="apple-mobile-web-app-title" content="MindQuay">
 <link rel="canonical" href="https://mindquay.com/">
-<link rel="stylesheet" href="/styles.css?v=13">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/styles.css?v=14">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<meta property="og:title" content="MindQuay — A quiet harbor for a busy mind">
-<meta property="og:description" content="A quiet harbor for thoughts, attention, reflection, and breathing on iPhone, with private iCloud backup and no MindQuay data server.">
-<meta property="og:image" content="https://mindquay.com/assets/icon-512.png">
+<meta property="og:title" content="MindQuay: Dock your thoughts. Rest easy.">
+<meta property="og:description" content="A private thought journal and daily focus practice for iPhone and iPad, with guided breathing, reflection, and private iCloud backup.">
+<meta property="og:image" content="https://mindquay.com/assets/cosmic-harbor-night.png">
+<meta property="og:image:width" content="1774">
+<meta property="og:image:height" content="887">
+<meta property="og:image:alt" content="A luminous harbor path crossing cosmic water beneath a star-filled sky">
 <meta property="og:url" content="https://mindquay.com/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="MindQuay">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MindQuay: Dock your thoughts. Rest easy.">
+<meta name="twitter:description" content="A private thought journal and daily focus practice for iPhone and iPad.">
+<meta name="twitter:image" content="https://mindquay.com/assets/cosmic-harbor-night.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MobileApplication",
-  "name": "MindQuay",
-  "operatingSystem": "iOS",
-  "applicationCategory": "HealthApplication",
-  "description": "A private harbor for docking thoughts, focusing attention, reflecting, and breathing.",
-  "downloadUrl": "https://apps.apple.com/us/app/mindquay/id6786727761",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://mindquay.com/#website",
+      "url": "https://mindquay.com/",
+      "name": "MindQuay",
+      "description": "The official website for the MindQuay thought journal and daily focus app."
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://mindquay.com/#app",
+      "name": "MindQuay",
+      "url": "https://mindquay.com/",
+      "image": "https://mindquay.com/assets/icon-512.png",
+      "operatingSystem": "iOS 17.0 or later; iPadOS 17.0 or later",
+      "applicationCategory": "HealthApplication",
+      "applicationSubCategory": "Mental wellness and productivity",
+      "softwareVersion": "1.2",
+      "description": "A free, private app for docking racing thoughts, choosing one daily focus, guided breathing, and reflection.",
+      "downloadUrl": "https://apps.apple.com/us/app/mindquay/id6786727761",
+      "installUrl": "https://apps.apple.com/us/app/mindquay/id6786727761",
+      "privacyPolicy": "https://mindquay.com/privacy/",
+      "termsOfService": "https://mindquay.com/terms/",
+      "isAccessibleForFree": true,
+      "featureList": [
+        "Thought docking ritual",
+        "Daily Beacon focus practice",
+        "Morning handoff",
+        "Guided breathing with haptics",
+        "Private reflection",
+        "Private iCloud backup"
+      ],
+      "screenshot": [
+        "https://mindquay.com/assets/01-harbor.png",
+        "https://mindquay.com/assets/04-dock.png",
+        "https://mindquay.com/assets/07-mirror.png"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  ]
 }
 </script>
 </head>
@@ -52,12 +98,17 @@
     <div class="wrap">
       <h1>MindQuay</h1>
       <p class="offer">Dock your thoughts. Rest easy.</p>
-      <p class="lede">MindQuay is a quiet harbor for a busy mind — a five-minute evening ritual for iPhone. Brain-dump every thought still circling at bedtime, decide what each one deserves, and go to sleep with an empty deck. Anything worth keeping is waiting for you in the morning.</p>
+      <p class="lede">MindQuay is a private thought journal and daily focus app built around a five-minute evening ritual for iPhone and iPad. Dock every thought still circling at bedtime, decide what each one deserves, and go to sleep with an empty deck. Anything worth keeping is waiting for you in the morning.</p>
       <div class="hero-actions">
-        <a class="btn primary" href="https://apps.apple.com/us/app/mindquay/id6786727761" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+        <div class="download-cluster">
+          <img class="download-app-icon" src="/assets/icon-512.png" alt="" width="64" height="64">
+          <a class="app-store-badge" href="https://apps.apple.com/us/app/mindquay/id6786727761" target="_blank" rel="noopener noreferrer" aria-label="Download MindQuay on the App Store">
+            <img src="/assets/download-on-the-app-store.svg" alt="Download on the App Store" width="180" height="60">
+          </a>
+        </div>
         <a class="btn ghost" href="#screens">See how it works</a>
       </div>
-      <span class="btn-note">Available now on iPhone · Free, with optional one-time support · No account required</span>
+      <span class="btn-note">Available now on iPhone; iPad support is coming in the next update · Free, with optional one-time support · No account required</span>
     </div>
   </section>
 
@@ -89,12 +140,12 @@
         <div class="card">
           <div class="glyph">✦</div>
           <h3>The Mirror</h3>
-          <p>See factual patterns in what you released and carried. On compatible iPhones, choose a deeper, removable reflection made by Apple Intelligence on your device.</p>
+          <p>See factual patterns in what you released and carried. On compatible Apple Intelligence devices, choose a deeper, removable reflection made privately on your device.</p>
         </div>
         <div class="card">
           <div class="glyph">🔒</div>
           <h3>Private by design</h3>
-          <p>Your practice stays on your iPhone and, when enabled, in your private iCloud backup. There is no MindQuay data server, analytics, advertising, or tracking. Apple identity is optional.</p>
+          <p>Your practice stays on your device and, when enabled, in your private iCloud backup. There is no MindQuay data server, analytics, advertising, or tracking. Apple identity is optional.</p>
         </div>
       </div>
     </div>
@@ -200,7 +251,7 @@
     <div class="wrap">
       <div class="privacy-banner">
         <h2>Your thoughts are nobody&rsquo;s business. Including ours.</h2>
-        <p>Your practice is stored on your iPhone and, while Private iCloud Backup is on, in your own iCloud account so it can survive a reinstall. MindQuay has no data server, analytics, ads, or tracking, and Sign in with Apple is optional. Apple Intelligence reflections run with Apple&rsquo;s on-device model. <a href="/privacy/">Read the full privacy policy</a>.</p>
+        <p>Your practice is stored on your device and, while Private iCloud Backup is on, in your own iCloud account so it can survive a reinstall or move between your Apple devices. MindQuay has no data server, analytics, ads, or tracking, and Sign in with Apple is optional. Apple Intelligence reflections run with Apple&rsquo;s on-device model. <a href="/privacy/">Read the full privacy policy</a>.</p>
       </div>
     </div>
   </section>

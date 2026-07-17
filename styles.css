@@ -37,7 +37,7 @@ header.site {
   padding: 20px 0;
 }
 header.site .wrap {
-  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
 }
 .brand {
   display: flex; align-items: center; gap: 12px;
@@ -50,6 +50,7 @@ nav.main a {
   margin-left: 22px;
 }
 nav.main a:hover { color: var(--sand); }
+nav.main { display: flex; align-items: center; }
 
 /* Hero */
 .hero {
@@ -103,6 +104,23 @@ nav.main a:hover { color: var(--sand); }
 .btn-note { display: block; margin-top: 14px; font-size: 0.85rem; color: var(--ink-faint); }
 .hero-actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px; }
 .hero-actions .btn.ghost { margin-left: 0; }
+.download-cluster {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+}
+.download-app-icon {
+  display: block; width: 64px; height: 64px; border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.38);
+}
+.app-store-badge { display: inline-block; line-height: 0; }
+.app-store-badge img { display: block; width: 180px; height: auto; }
+.app-store-badge:focus-visible,
+.btn:focus-visible,
+nav.main a:focus-visible,
+.brand:focus-visible {
+  outline: 3px solid var(--sand);
+  outline-offset: 4px;
+}
 
 /* Sections */
 section { padding: 64px 0; }
@@ -224,10 +242,17 @@ footer.site a { color: var(--ink-dim); text-decoration: none; margin-right: 18px
 footer.site a:hover { color: var(--sand); }
 
 @media (max-width: 640px) {
+  header.site { padding: 14px 0 18px; }
+  header.site .wrap { justify-content: center; }
+  .brand { width: 100%; justify-content: center; }
+  nav.main { width: 100%; justify-content: space-between; gap: 10px; }
+  nav.main a { margin-left: 0; font-size: 0.84rem; }
   .hero { padding: 48px 0 24px; }
   section { padding: 44px 0; }
   .btn.ghost { margin-left: 0; margin-top: 12px; }
   .hero-actions .btn { width: min(100%, 320px); }
   .hero-actions .btn.ghost { margin-top: 0; }
-  nav.main a { margin-left: 14px; font-size: 0.88rem; }
+  .download-cluster { width: 100%; gap: 10px; }
+  .download-app-icon { width: 56px; height: 56px; border-radius: 12px; }
+  .app-store-badge img { width: 166px; }
 }
