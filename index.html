@@ -11,12 +11,13 @@
 <meta name="apple-mobile-web-app-title" content="MindQuay">
 <link rel="canonical" href="https://mindquay.com/">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="/styles.css?v=14">
+<link rel="preload" as="image" href="/assets/cosmic-harbor-night.jpg" type="image/jpeg" fetchpriority="high">
+<link rel="stylesheet" href="/styles.css?v=16">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta property="og:title" content="MindQuay: Dock your thoughts. Rest easy.">
 <meta property="og:description" content="A private thought journal and daily focus practice for iPhone and iPad, with guided breathing, reflection, and private iCloud backup.">
-<meta property="og:image" content="https://mindquay.com/assets/cosmic-harbor-night.png">
+<meta property="og:image" content="https://mindquay.com/assets/cosmic-harbor-night.jpg">
 <meta property="og:image:width" content="1774">
 <meta property="og:image:height" content="887">
 <meta property="og:image:alt" content="A luminous harbor path crossing cosmic water beneath a star-filled sky">
@@ -27,7 +28,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="MindQuay: Dock your thoughts. Rest easy.">
 <meta name="twitter:description" content="A private thought journal and daily focus practice for iPhone and iPad.">
-<meta name="twitter:image" content="https://mindquay.com/assets/cosmic-harbor-night.png">
+<meta name="twitter:image" content="https://mindquay.com/assets/cosmic-harbor-night.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -100,7 +101,7 @@
       <p class="offer">Dock your thoughts. Rest easy.</p>
       <p class="lede">MindQuay is a private thought journal and daily focus app built around a five-minute evening ritual for iPhone and iPad. Dock every thought still circling at bedtime, decide what each one deserves, and go to sleep with an empty deck. Anything worth keeping is waiting for you in the morning.</p>
       <div class="hero-actions">
-        <div class="download-cluster">
+        <div class="download-cluster" id="hero-download">
           <img class="download-app-icon" src="/assets/icon-512.png" alt="" width="64" height="64">
           <a class="app-store-badge" href="https://apps.apple.com/us/app/mindquay/id6786727761" target="_blank" rel="noopener noreferrer" aria-label="Download MindQuay on the App Store">
             <img src="/assets/download-on-the-app-store.svg" alt="Download on the App Store" width="180" height="60">
@@ -241,7 +242,7 @@
         </div>
       </div>
       <p style="text-align:center; font-size:0.85em; opacity:0.75; max-width:40em; margin:1.5em auto 0;">The app is free, and no gift unlocks any feature. One-time gifts are single charges and do not renew. Everything is handled by Apple; MindQuay never sees your payment details. Prices in USD; App Store pricing may vary by region.</p>
-      <div class="download-cta">
+      <div class="download-cta" id="final-download">
         <a class="btn primary" href="https://apps.apple.com/us/app/mindquay/id6786727761" target="_blank" rel="noopener noreferrer">Get MindQuay on the App Store</a>
       </div>
     </div>
@@ -258,6 +259,17 @@
 
 </main>
 
+<aside class="mobile-download-dock" aria-label="Download MindQuay" aria-hidden="true" inert>
+  <a href="https://apps.apple.com/us/app/mindquay/id6786727761" target="_blank" rel="noopener noreferrer" aria-label="Get MindQuay free on the App Store">
+    <img class="mobile-download-icon" src="/assets/icon-512.png" alt="" width="48" height="48">
+    <span class="mobile-download-copy">
+      <strong>MindQuay</strong>
+      <small>Free on the App Store</small>
+    </span>
+    <span class="mobile-download-action" aria-hidden="true">Get</span>
+  </a>
+</aside>
+
 <footer class="site">
   <div class="wrap">
     <div>
@@ -270,5 +282,6 @@
   </div>
 </footer>
 
+<script src="/site.js?v=2" defer></script>
 </body>
 </html>
