@@ -101,6 +101,8 @@ nav.main a:hover { color: var(--sand); }
 }
 .btn.ghost:hover { border-color: var(--mist); color: var(--sand); }
 .btn-note { display: block; margin-top: 14px; font-size: 0.85rem; color: var(--ink-faint); }
+.hero-actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 12px; }
+.hero-actions .btn.ghost { margin-left: 0; }
 
 /* Sections */
 section { padding: 64px 0; }
@@ -125,6 +127,7 @@ section p.sub { text-align: center; color: var(--ink-dim); max-width: 56ch; marg
 .card p { font-size: 0.95rem; color: var(--ink-dim); }
 
 /* Screenshot strip */
+.product-tour { background: rgba(255, 255, 255, 0.025); }
 .shots {
   display: grid; gap: 22px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -133,6 +136,7 @@ section p.sub { text-align: center; color: var(--ink-dim); max-width: 56ch; marg
 .shots figure { text-align: center; }
 .shots img {
   width: 100%; max-width: 260px; border-radius: 8px;
+  aspect-ratio: 1320 / 2868; object-fit: cover;
   border: 1px solid var(--card-border);
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
 }
@@ -172,6 +176,7 @@ section p.sub { text-align: center; color: var(--ink-dim); max-width: 56ch; marg
 .plan .price { font-size: 2.1rem; font-weight: 700; color: var(--sand); }
 .plan .per { color: var(--ink-faint); font-size: 0.95rem; }
 .plan p.detail { margin-top: 10px; color: var(--ink-dim); font-size: 0.9rem; }
+.download-cta { margin-top: 28px; text-align: center; }
 
 /* Privacy banner */
 .privacy-banner {
@@ -222,5 +227,7 @@ footer.site a:hover { color: var(--sand); }
   .hero { padding: 48px 0 24px; }
   section { padding: 44px 0; }
   .btn.ghost { margin-left: 0; margin-top: 12px; }
+  .hero-actions .btn { width: min(100%, 320px); }
+  .hero-actions .btn.ghost { margin-top: 0; }
   nav.main a { margin-left: 14px; font-size: 0.88rem; }
 }
