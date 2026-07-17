@@ -7,12 +7,15 @@
 <meta name="description" content="MindQuay is a free, private iPhone and iPad app for docking racing thoughts, choosing one daily focus, guided breathing, reflection, and iCloud backup.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0d1b32">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; img-src 'self' data:; style-src 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; upgrade-insecure-requests">
 <meta name="apple-itunes-app" content="app-id=6786727761">
 <meta name="apple-mobile-web-app-title" content="MindQuay">
 <link rel="canonical" href="https://mindquay.com/">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="preload" as="image" href="/assets/cosmic-harbor-night.jpg" type="image/jpeg" fetchpriority="high">
-<link rel="stylesheet" href="/styles.css?v=16">
+<link rel="preload" as="image" href="/assets/cosmic-harbor-night-mobile.jpg" type="image/jpeg" media="(max-width: 720px)" fetchpriority="high">
+<link rel="preload" as="image" href="/assets/cosmic-harbor-night.jpg" type="image/jpeg" media="(min-width: 721px)" fetchpriority="high">
+<link rel="stylesheet" href="/styles.css?v=17">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta property="og:title" content="MindQuay: Dock your thoughts. Rest easy.">
@@ -65,9 +68,9 @@
         "Private iCloud backup"
       ],
       "screenshot": [
-        "https://mindquay.com/assets/01-harbor.png",
-        "https://mindquay.com/assets/04-dock.png",
-        "https://mindquay.com/assets/07-mirror.png"
+        "https://mindquay.com/assets/01-harbor.jpg",
+        "https://mindquay.com/assets/04-dock.jpg",
+        "https://mindquay.com/assets/07-mirror.jpg"
       ],
       "offers": {
         "@type": "Offer",
@@ -83,7 +86,7 @@
 
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="/"><img src="/assets/icon-512.png" alt="MindQuay app icon"> MindQuay</a>
+    <a class="brand" href="/"><img src="/assets/icon-128.png" alt="MindQuay app icon"> MindQuay</a>
     <nav class="main">
       <a href="/#features">Features</a>
       <a href="/#screens">Tour</a>
@@ -102,7 +105,7 @@
       <p class="lede">MindQuay is a private thought journal and daily focus app built around a five-minute evening ritual for iPhone and iPad. Dock every thought still circling at bedtime, decide what each one deserves, and go to sleep with an empty deck. Anything worth keeping is waiting for you in the morning.</p>
       <div class="hero-actions">
         <div class="download-cluster" id="hero-download">
-          <img class="download-app-icon" src="/assets/icon-512.png" alt="" width="64" height="64">
+          <img class="download-app-icon" src="/assets/icon-128.png" alt="" width="64" height="64">
           <a class="app-store-badge" href="https://apps.apple.com/us/app/mindquay/id6786727761" target="_blank" rel="noopener noreferrer" aria-label="Download MindQuay on the App Store">
             <img src="/assets/download-on-the-app-store.svg" alt="Download on the App Store" width="180" height="60">
           </a>
@@ -186,39 +189,39 @@
       <p class="sub">A clear daily path from a busy mind to one direction worth carrying.</p>
       <div class="shots">
         <figure>
-          <img src="/assets/01-harbor.png?v=12" alt="MindQuay Harbor with separate buttons for docking, the first-week guide, Beacon, and today's reading" width="660" height="1434" loading="lazy" decoding="async">
+          <img src="/assets/01-harbor.jpg?v=13" alt="MindQuay Harbor with separate buttons for docking, the first-week guide, Beacon, and today's reading" width="660" height="1434" loading="lazy" decoding="async">
           <figcaption>Your Harbor makes every next step visible and distinct.</figcaption>
         </figure>
         <figure>
-          <img src="/assets/02-guide.png?v=12" alt="MindQuay first-week guide with six short lessons" width="660" height="1434" loading="lazy" decoding="async">
+          <img src="/assets/02-guide.jpg?v=13" alt="MindQuay first-week guide with six short lessons" width="660" height="1434" loading="lazy" decoding="async">
           <figcaption>Six short lessons show new users exactly how the practice works.</figcaption>
         </figure>
         <figure>
-          <img src="/assets/03-beacon.png?v=12" alt="MindQuay Beacon for choosing one direction and a next step" width="660" height="1434" loading="lazy" decoding="async">
+          <img src="/assets/03-beacon.jpg?v=13" alt="MindQuay Beacon for choosing one direction and a next step" width="660" height="1434" loading="lazy" decoding="async">
           <figcaption>Choose one direction, set a small next step, and bring your attention back.</figcaption>
         </figure>
         <figure>
-          <img src="/assets/04-dock.png?v=12" alt="MindQuay sorting a circling thought into release, tomorrow, or action" width="660" height="1434" loading="lazy" decoding="async">
+          <img src="/assets/04-dock.jpg?v=13" alt="MindQuay sorting a circling thought into release, tomorrow, or action" width="660" height="1434" loading="lazy" decoding="async">
           <figcaption>Give each circling thought one clear destination.</figcaption>
         </figure>
         <figure>
-          <img src="/assets/05-release.png?v=12" alt="A released thought dissolving into the cosmic harbor water" width="660" height="1434" loading="lazy" decoding="async">
+          <img src="/assets/05-release.jpg?v=13" alt="A released thought dissolving into the cosmic harbor water" width="660" height="1434" loading="lazy" decoding="async">
           <figcaption>When you let go, the thought travels into the harbor before the next one appears.</figcaption>
         </figure>
         <figure>
-          <img src="/assets/06-morning.png?v=12" alt="MindQuay morning handoff with four clear choices for a carried thought" width="660" height="1434" loading="lazy" decoding="async">
+          <img src="/assets/06-morning.jpg?v=13" alt="MindQuay morning handoff with four clear choices for a carried thought" width="660" height="1434" loading="lazy" decoding="async">
           <figcaption>A small morning decision for each thought you chose to carry.</figcaption>
         </figure>
         <figure>
-          <img src="/assets/07-mirror.png?v=12" alt="The MindQuay Mirror with structured reflection and an optional Apple Intelligence invitation" width="660" height="1434" loading="lazy" decoding="async">
+          <img src="/assets/07-mirror.jpg?v=13" alt="The MindQuay Mirror with structured reflection and an optional Apple Intelligence invitation" width="660" height="1434" loading="lazy" decoding="async">
           <figcaption>The Mirror stays useful without AI; a deeper on-device reflection is always your choice.</figcaption>
         </figure>
         <figure>
-          <img src="/assets/08-calm.png?v=12" alt="MindQuay Calm showing a private guided breathing streak" width="660" height="1434" loading="lazy" decoding="async">
+          <img src="/assets/08-calm.jpg?v=13" alt="MindQuay Calm showing a private guided breathing streak" width="660" height="1434" loading="lazy" decoding="async">
           <figcaption>Build a breathing practice without pressure or public scores.</figcaption>
         </figure>
         <figure>
-          <img src="/assets/09-breathe.png?v=12" alt="MindQuay guided breathing ring during an inhale" width="660" height="1434" loading="lazy" decoding="async">
+          <img src="/assets/09-breathe.jpg?v=13" alt="MindQuay guided breathing ring during an inhale" width="660" height="1434" loading="lazy" decoding="async">
           <figcaption>Follow the ring while the phone breathes with you through haptics.</figcaption>
         </figure>
       </div>
@@ -261,7 +264,7 @@
 
 <aside class="mobile-download-dock" aria-label="Download MindQuay" aria-hidden="true" inert>
   <a href="https://apps.apple.com/us/app/mindquay/id6786727761" target="_blank" rel="noopener noreferrer" aria-label="Get MindQuay free on the App Store">
-    <img class="mobile-download-icon" src="/assets/icon-512.png" alt="" width="48" height="48">
+    <img class="mobile-download-icon" src="/assets/icon-128.png" alt="" width="48" height="48">
     <span class="mobile-download-copy">
       <strong>MindQuay</strong>
       <small>Free on the App Store</small>

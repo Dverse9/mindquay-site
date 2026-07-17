@@ -10,7 +10,7 @@
   --sand-dim: #e8d5a8;
   --ink: #eef4f7;
   --ink-dim: rgba(238, 244, 247, 0.72);
-  --ink-faint: rgba(238, 244, 247, 0.45);
+  --ink-faint: rgba(238, 244, 247, 0.66);
   --material: rgba(22, 52, 68, 0.56);
   --material-strong: rgba(12, 35, 52, 0.78);
   --material-border: rgba(153, 208, 222, 0.18);
@@ -243,6 +243,8 @@ section p.sub { text-align: center; color: var(--ink-dim); max-width: 56ch; marg
 }
 .privacy-banner h2 { margin-bottom: 10px; }
 .privacy-banner p { color: var(--ink-dim); }
+.privacy-banner a { color: var(--mist); }
+.privacy-banner a:hover { color: var(--sand); }
 
 /* Prose pages (privacy / terms / support) */
 .prose { max-width: 720px; margin: 0 auto; padding: 48px 0 72px; }
@@ -287,6 +289,7 @@ footer.site a:hover { color: var(--sand); }
 }
 
 @media (max-width: 720px) {
+  .hero { background-image: url("/assets/cosmic-harbor-night-mobile.jpg"); }
   .mobile-download-dock {
     display: block;
     position: fixed;
