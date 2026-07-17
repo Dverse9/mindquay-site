@@ -231,6 +231,13 @@ section p.sub { text-align: center; color: var(--ink-dim); max-width: 56ch; marg
 .plan .price { font-size: 2.1rem; font-weight: 700; color: var(--sand); }
 .plan .per { color: var(--ink-faint); font-size: 0.95rem; }
 .plan p.detail { margin-top: 10px; color: var(--ink-dim); font-size: 0.9rem; }
+.pricing-note {
+  max-width: 40em;
+  margin: 1.5em auto 0;
+  color: var(--ink-dim);
+  font-size: 0.85em;
+  text-align: center;
+}
 .download-cta { margin-top: 28px; text-align: center; }
 
 /* Privacy banner */
